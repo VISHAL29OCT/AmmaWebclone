@@ -18,7 +18,7 @@ const Navbar = () => {
       <nav className="flex justify-between items-center px-3 sm:px-6 py-4 sm:py-6 border-b sticky top-0 bg-white z-30">
         <div className='text-xl sm:text-2xl cursor-pointer' onClick={() => setOpen(!open)}>☰</div>
         <Slider open={open} setOpen={setOpen} />
-        <div className='font-semibold tracking-widest cursor-pointer text-lg sm:text-2xl'>AMMA</div>
+        <div className='font-semibold tracking-widest cursor-pointer text-lg sm:text-2xl'>AMAMA</div>
         <div className='flex items-center gap-3 sm:gap-5 text-xl ' >
           <FaSearch className='cursor-pointer hover:text-gray-500 transition text-lg sm:text-xl' />
           <Link to="/login">
