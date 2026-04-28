@@ -1,18 +1,23 @@
 import React from 'react'
-import { Link, Navigate } from 'react-router'
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate()
-  const HandleLogin =()=>{
+
+  const HandleLogin = (e) => {
+    e.preventDefault()
     navigate("/")
   }
+
   return (
-    <div className='flex justify-center items-center min-h-screen bg-gray-100'>
-      
-      <div className='bg-white p-8 rounded-xl shadow-lg w-96' >
-        
-        <h2 className='text-2xl font-semibold text-center mb-2'>
+    <div className='flex justify-center items-center h-screen bg-gray-100 px-4'>
+
+      <form 
+        onSubmit={HandleLogin}
+        className='bg-white p-6 sm:p-8 rounded-xl shadow-lg w-full max-w-sm'
+      >
+
+        <h2 className='text-xl sm:text-2xl font-semibold text-center mb-2'>
           Login Here
         </h2>
 
@@ -21,30 +26,44 @@ const Login = () => {
         </p>
 
         <div className='flex flex-col gap-4'>
-          
-          <input  type="email"  placeholder='E-mail' 
-            className='border px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400'
+
+          <input  
+            type="email"  
+            placeholder='E-mail' 
+            required
+            className='border px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-black'
           />
 
           <input 
             type="password" 
             placeholder='Password' 
-            className='border px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400'
+            required
+            className='border px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-black'
           />
 
           <div className='text-right'>
-            <a href="#" className='text-sm text-blue-500 hover:underline'>
+            <Link to="/forgot-password" className='text-sm text-blue-500 hover:underline'>
               Forgot password?
-            </a>
+            </Link>
           </div>
 
-          <button onClick={HandleLogin} type='submit' className='bg-black text-white py-2 rounded-md hover:bg-gray-800 transition'>
+          <button 
+            type='submit' 
+            className='bg-black text-white py-2 rounded-md hover:bg-gray-800 transition'
+          >
             Login
           </button>
 
         </div>
-        <p className='text-center mt-2'>Don't have an account? <Link to="/signup">Sign up</Link> </p>
-      </div>
+
+        <p className='text-center mt-4 text-sm'>
+          Don't have an account?{" "}
+          <Link to="/signup" className='text-blue-500 hover:underline'>
+            Sign up
+          </Link>
+        </p>
+
+      </form>
 
     </div>
   )

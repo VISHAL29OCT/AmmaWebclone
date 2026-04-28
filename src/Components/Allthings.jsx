@@ -2,17 +2,20 @@ import React from 'react'
 
 const Allthings = () => {
   return (
-    <div>
-          <div className='flex gap-3  h-max-200 w-full mt-5 items-center justify-center'>
-                <img src="service1.avif" alt="" className='h-30 w-30 ' />
-                <img src="service2.avif" alt="" className='h-30 w-30 ' />
-                <img src="service3.avif" alt="" className='h-30 w-30 ' />
-                <img src="service4.avif" alt="" className='h-30 w-30 ' />
-                <img src="service5.avif" alt="" className='h-30 w-30 ' />
-                <img src="service6.png" alt="" className='h-30 w-30 ' />
-                <img src="service8.avif" alt="" className='h-30 w-30 ' />
+    <div className="mt-5">
 
-            </div>
+      <div className="flex overflow-x-auto gap-4 px-4 no-scrollbar  md:items-center lg:justify-center mt-4 ">
+
+        <img src="service1.avif" className="w-20 h-20 sm:w-24 sm:h-24 shrink-0" />
+        <img src="service2.avif" className="w-20 h-20 sm:w-24 sm:h-24 shrink-0" />
+        <img src="service3.avif" className="w-20 h-20 sm:w-24 sm:h-24 shrink-0" />
+        <img src="service4.avif" className="w-20 h-20 sm:w-24 sm:h-24 shrink-0" />
+        <img src="service5.avif" className="w-20 h-20 sm:w-24 sm:h-24 shrink-0" />
+        <img src="service6.png" className="w-20 h-20 sm:w-24 sm:h-24 shrink-0" />
+        <img src="service8.avif" className="w-20 h-20 sm:w-24 sm:h-24 shrink-0" />
+
+      </div>
+
     </div>
   )
 }

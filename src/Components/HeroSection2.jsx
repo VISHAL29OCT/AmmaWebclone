@@ -33,8 +33,10 @@ const HeroSection2 = () => {
 
                 </div>
                 <div>
-
-                    <img src="bg4.webp" alt="" className='w-full h-72 object-cover' />
+                    <picture>
+                        <source media="(max-width: 699px)" srcSet="mobbg6.webp"/>
+                        <img src="bg4.webp" alt="" className='w-full h-72 object-cover' />
+                    </picture>
                 </div>
 
 
@@ -66,7 +68,8 @@ const HeroSection2 = () => {
             </div>
             <div>
 
-                <img src="bg5.webp" alt="" className='w-full h-72 object-cover mt-0' />
+               <img 
+  src="bg5.webp" className='w-full h-[50vh] sm:h-[60vh] object-cover' />
             </div>
         </>
     )

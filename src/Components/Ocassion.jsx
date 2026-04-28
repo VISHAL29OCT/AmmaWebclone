@@ -7,9 +7,9 @@ const Ocassion = () => {
 
                 <h2 className='font-semibold text-3xl  mb-5 mt-2 '>SHOP BY OCASSIONS </h2>
 
-                <div className='flex justify-center gap-8 items-center w-full h-72 '>
+            <div className='flex overflow-x-auto gap-4 px-4 w-full no-scrollbar lg:items-center lg:justify-center'>
 
-                    <div className="h-64 w-40 overflow-hidden rounded-sm group">
+                    <div className="h-64 w-40 overflow-hidden rounded-sm group shrink-0 ">
                         <img
                             src="image55.webp"
                             className="w-full h-full object-cover 
@@ -18,7 +18,7 @@ const Ocassion = () => {
                         />
                     </div>
 
-                    <div className="h-64 w-40 overflow-hidden rounded-sm group">
+                    <div className="h-64 w-40 overflow-hidden rounded-sm group shrink-0">
                         <img
                             src="image56.webp"
                             className="w-full h-full object-cover 
@@ -27,7 +27,7 @@ const Ocassion = () => {
                         />
                     </div>
 
-                    <div className="h-64 w-40 overflow-hidden rounded-sm group">
+                    <div className="h-64 w-40 overflow-hidden rounded-sm group shrink-0">
                         <img
                             src="image57.webp"
                             className="w-full h-full object-cover 
@@ -36,7 +36,7 @@ const Ocassion = () => {
                         />
                     </div>
 
-                    <div className="h-64 w-40 overflow-hidden rounded-sm group ">
+                    <div className="h-64 w-40 overflow-hidden rounded-sm group shrink-0 ">
                         <img
                             src="image58.webp"
                             className="w-full h-full object-cover 
@@ -45,7 +45,7 @@ const Ocassion = () => {
                         />
                     </div>
 
-                      <div className="h-64 w-40 overflow-hidden rounded-sm group ">
+                      <div className="h-64 w-40 overflow-hidden rounded-sm group shrink-0 ">
                         <img
                             src="image60.webp"
                             className="w-full h-full object-cover 

@@ -3,28 +3,30 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='flex justify-between bg-gray-400 text-black mt-4 items-center px-6 py-2'>
+    <div className='flex flex-col sm:flex-row justify-between items-center bg-gray-200 text-black mt-6 px-4 sm:px-6 py-4 gap-3'>
 
-      <div className='font-light'>
+      {/* LEFT TEXT */}
+      <div className='text-xs sm:text-sm text-center sm:text-left'>
         © 2026 - Amama Powered by VISHAL
       </div>
 
+      {/* SOCIAL ICONS */}
       <div className='flex gap-4 items-center'>
 
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-          <FaInstagram className="text-xl hover:text-pink-500 transition hover:scale-110 cursor-pointer" />
+          <FaInstagram className="text-lg sm:text-xl hover:text-pink-500 transition hover:scale-110 cursor-pointer" />
         </a>
 
         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="text-xl hover:text-blue-700 transition hover:scale-110 cursor-pointer" />
+          <FaLinkedin className="text-lg sm:text-xl hover:text-blue-700 transition hover:scale-110 cursor-pointer" />
         </a>
 
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-          <FaFacebook className="text-xl hover:text-blue-600 transition hover:scale-110 cursor-pointer" />
+          <FaFacebook className="text-lg sm:text-xl hover:text-blue-600 transition hover:scale-110 cursor-pointer" />
         </a>
 
         <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-          <FaYoutube className="text-xl hover:text-red-600 transition hover:scale-110 cursor-pointer" />
+          <FaYoutube className="text-lg sm:text-xl hover:text-red-600 transition hover:scale-110 cursor-pointer" />
         </a>
 
       </div>

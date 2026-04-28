@@ -9,7 +9,6 @@ import HeroSection2 from "../Components/HeroSection2";
 import ShopLook from "../Components/ShopLook";
 import Instagram from "../Components/Instagram";
 import Links from "../Components/Links";
-import Investiget from "../Components/Investiget";
 import Allthings from "../Components/Allthings";
 
 export default function Home() {
@@ -27,7 +26,7 @@ export default function Home() {
       <Allthings/>
       <Instagram/>
       <Links/>
-      <Investiget/>
+      {/* <Investiget/> */}
       
     </>
   );

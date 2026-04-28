@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className='text-xl sm:text-2xl cursor-pointer' onClick={() => setOpen(!open)}>☰</div>
         <Slider open={open} setOpen={setOpen} />
         <div className='font-semibold tracking-widest cursor-pointer text-lg sm:text-2xl'>AMMA</div>
-        <div className='flex items-centergap-3 sm:gap-5 text-xl ' >
+        <div className='flex items-center gap-3 sm:gap-5 text-xl ' >
           <FaSearch className='cursor-pointer hover:text-gray-500 transition text-lg sm:text-xl' />
           <Link to="/login">
             <FaUser className='cursor-pointer hover:text-gray-500 transition text-lg sm:text-xl' />
